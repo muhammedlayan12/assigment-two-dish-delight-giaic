@@ -1,0 +1,75 @@
+
+.breadCrumb {
+    height: 15vmin;
+    width: 100%;
+    margin-top:3vmin;
+    background-color: rgb(255, 255, 235);
+    padding: 3vmin 0 3vmin 35vmin;
+  }
+  
+  .breadCrumb .name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .breadCrumb .parent {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .parent a {
+    margin-right: 1vmin;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    font-size: 1.1em;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .parent span {
+    margin-left: 1.5vmin;
+    font-size: 0.9em;
+    color: #838383;
+  }
+  
+  
+  .parent i{
+    color:black;
+    font-size:1.2em;
+  }
+
+  @media (max-width: 768px) {
+    .breadCrumb {
+        height: auto;
+        padding: 3vmin 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .breadCrumb .name {
+        font-size: 1.8em;
+    }
+    .parent a {
+        font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .breadCrumb {
+      margin-top: 15vmin;
+      margin-bottom: 15vmin;
+        height: auto;
+        padding: 2vmin 0;
+    }
+    .breadCrumb .name {
+        font-size: 1.5em;
+    }
+    .parent a {
+        font-size: 0.9em;
+    }
+    .parent span {
+        font-size: 0.8em;
+    }
+  }
